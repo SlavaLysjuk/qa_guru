@@ -12,10 +12,10 @@ public class GoogleTest {
         open("https://www.google.com/");
         // Ввести Selenide в поиск
         //$("name=\"q\"").sendKeys("Selenide");
-        $(byName("q")).setValue("Selenide").pressEnter();
+        $(byName("q")).setValue("fantasy premier league").pressEnter();
 
         sleep(5000);
-        // Проверить, что Selenide появился в результатах поиска
-        $("#search").shouldHave(text("selenide.org"));
+        // Проверить, что fantasy.premierleague.com появился в результатах поиска
+        $("#search").shouldHave(text("fantasy.premierleague.com"));
     }
 }
